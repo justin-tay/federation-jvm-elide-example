@@ -1,0 +1,18 @@
+scalar DeferredID
+
+type Query {
+    groupReview(id: ID!): GroupReview
+    groupReviews: [GroupReview!]!
+}
+
+type Group @key(fields: "name") @extends {
+    name: DeferredID! @external
+    groupReviews: [GroupReview!]!
+}
+
+type GroupReview {
+    id: ID!,
+    text: String
+    stars: Int!
+    group: Group
+}
