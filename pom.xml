@@ -15,9 +15,9 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<federation-graphql-java-support.version>4.2.0</federation-graphql-java-support.version>
-		
-		<spring-javaformat-maven-plugin.version>0.0.39</spring-javaformat-maven-plugin.version>
+		<federation-graphql-java-support.version>5.1.0</federation-graphql-java-support.version>
+
+		<spring-javaformat-maven-plugin.version>0.0.42</spring-javaformat-maven-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
